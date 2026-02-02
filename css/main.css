@@ -50,6 +50,22 @@ table {
 
 /* STYLING BEGINS HERE */
 
+
+.skiplinks ul { /* allows skiplinks nav to hold other elements with a position property */
+    position: relative;
+}
+
+.skiplinks a {   /* uses position absolute to hide the skiplinks */
+    position: absolute;
+    top: -10em;
+}
+
+.skiplinks a:focus { /* adds a "focus" pseudoclass for skiplinks */
+background-color: rgb(255, 234, 0); /* displays when user selects or tabs to skiplinks */
+top: 0; /* brings skiplinks back on the page when they are focused on */
+}
+
+
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   background-color: whitesmoke; /* changes background color to fix contrast issues */
