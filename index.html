@@ -8,61 +8,82 @@
   <title>Accessible Me</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-  <div class="container">
-    <div class="site-header">
+<body> <!-- adds body element -->
+  <div class="container"> <!-- this container targets all body content for styling -->
+    <header class="site-header"> <!-- changes div to header -->
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+      <nav class="main-nav"> <!-- changes div to nav, keeps class for styling -->
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
-      </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
-    </div>
-    <div class="main-content">
-      <h1>Welcome to Jam Box</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
-        <h1>Meet the owner</h1>
+      </nav> <!-- closes nav instead of closing div -->
+      <img src="https://picsum.photos/1200/900" class="banner"> <!-- changes photo source -->
+    </header> <!-- closes header instead of closing div -->
+    <main class="main-content"> <!-- changes div to main, keeps class for styling -->
+      <h2>Welcome to Jam Box</h2> <!-- changes h1 to h2 -->
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa
+        eveniet,
+        officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia
+        veritatis.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam
+        omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto
+        error
+        voluptatibus.</p>
+
+      <article class="owner"> <!-- changes div to article, keeps class for styling -->
+        <h2>Meet the owner</h2> <!-- changes h1 to h2 -->
         <ul>
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
           <li>Email: johnjoe@jambox.ca</li>
           <li>Phone: 613-000-0000</li>
         </ul>
-        <h1>Address</h1>
+        <h3>Address</h3> <!-- changes h1 to h3 -->
         <p>
           Jambox Studios
           123 Guitar Road,
           Musicville, Danceistan
           B3T 0L0
         </p>
-      </div>
-      <div class="contact-section">
-        <h1>Contact Us</h1>
-        <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
+      </article> <!-- closes owner article instead of div -->
+
+      <article class="contact-section"> <!-- changes div to article, keeps class for styling -->
+        <h3>Contact Us</h3> <!-- changes h1 to h3 -->
+
+        <form action="thanks.html" method="post"> <!-- adds method=post to protect private info -->
+
+          <label for="fullname">Full Name</label> <!-- adds label for screen readers -->
+          <input type="text" id="fullname" name="fullname" placeholder="Full Name"> <!-- adds id and name to input -->
+
+          <label for="email">Email</label> <!-- adds label for screen readers -->
+          <input type="email" id="email" name="email" placeholder="Email"> <!-- changes input type to email and adds id and name -->
+
+          <label for="subject">Subject</label> <!-- adds label for screen readers -->
+          <input type="text" id="subject" name="subject" placeholder="Subject"> <!-- adds id and name to input -->
+
+          <label for="yourmessage">Your Message</label> <!-- changes bold text to message label -->
+          <textarea id="message" name="message"></textarea> <!-- adds id and name to text area -->
+      
           <button type="submit">Send</button>
+
         </form>
-      </div>
-    </div>
-    <div class="site-footer">
-      &copy; 2021 Jam Box Studios
-    </div>
-  </div>
-</body>
+
+      </article>
+      <!-- closes contact article instead of div -->
+
+    </main> <!-- closes main instead of closing div -->
+    <footer class="site-footer"> <!-- changes div to footer -->
+      <p>&copy; 2021 Jam Box Studios</p> <!-- adds paragraph tag to footer content -->
+    </footer> <!-- closes footer instead of div -->
+  </div> <!-- closes container that targets all body content for styling -->
+</body> <!-- closes body -->
 
 </html>
