@@ -48,7 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-/* STYLING BEGINS HERE */
+/* MY STYLING BEGINS HERE */
 
 
 .skiplinks ul { /* allows skiplinks nav to hold other elements with a position property */
@@ -65,6 +65,7 @@ background-color: rgb(255, 234, 0); /* displays when user selects or tabs to ski
 top: 0; /* brings skiplinks back on the page when they are focused on */
 }
 
+/* ASSIGNMENT STLING BEGINS HERE */
 
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
