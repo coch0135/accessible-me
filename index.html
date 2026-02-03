@@ -24,10 +24,9 @@
     </nav>
   
   <div class="container"> <!-- this container targets all body content for styling -->
-    <header class="site-header"> <!-- changes div to header -->
+    <header class="site-header" role="banner"> <!-- changes div to header and adds ARIA role -->
       <h1>Jam Box Studios</h1>
-      <nav class="main-nav">
-      <!-- changes div to nav, keeps class for styling -->
+      <nav class="main-nav" role="navigation"> <!-- changes div to nav, keeps  class, adds ARIA role -->
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -37,7 +36,8 @@
       </nav> <!-- closes nav instead of closing div -->
       <img src="https://picsum.photos/1200/900" class="banner"> <!-- changes photo source -->
     </header> <!-- closes header instead of closing div -->
-    <main class="main-content"> <!-- changes div to main, keeps class for styling -->
+
+    <main class="main-content" role="main"> <!-- changes div to main, keeps class, adds ARIA role -->
       <h2>Welcome to Jam Box</h2> <!-- changes h1 to h2 -->
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa
         eveniet,
@@ -48,7 +48,7 @@
         error
         voluptatibus.</p>
 
-      <article class="owner"> <!-- changes div to article, keeps class for styling -->
+      <article class="owner" role="complementary"> <!-- changes div to article, keeps class, adds ARIA role -->
         <h2>Meet the owner</h2> <!-- changes h1 to h2 -->
         <ul>
           <li>Name: John Doe</li>
@@ -65,10 +65,10 @@
         </p>
       </article> <!-- closes owner article instead of div -->
 
-      <article class="contact-section"> <!-- changes div to article, keeps class for styling -->
+      <article class="contact-section" role="complementary"> <!-- changes div to article, keeps class, adds ARIA role -->
         <h3>Contact Us</h3> <!-- changes h1 to h3 -->
 
-        <form action="thanks.html" method="post"> <!-- adds method=post to protect private info -->
+        <form action="thanks.html" method="post" role="form"> <!-- adds method-post to protect private info and ARIA role -->
 
           <label for="fullname">Full Name</label> <!-- adds label for screen readers -->
           <input type="text" id="fullname" name="fullname" placeholder="Full Name"> <!-- adds id and name to input -->
@@ -86,8 +86,7 @@
 
         </form>
 
-      </article>
-      <!-- closes contact article instead of div -->
+      </article> <!-- closes contact article instead of div -->
 
     </main> <!-- closes main instead of closing div -->
     <footer class="site-footer"> <!-- changes div to footer -->
