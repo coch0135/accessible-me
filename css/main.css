@@ -50,6 +50,9 @@ table {
 
 /* MY STYLING BEGINS HERE */
 
+html {
+  font-size: 18px; /* default font size is higher for better visibility */
+}
 
 .skiplinks ul { /* allows skiplinks nav to hold other elements with a position property */
     position: relative;
@@ -69,6 +72,7 @@ top: 0; /* brings skiplinks back on the page when they are focused on */
 
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
+  /* tried to add font-weight: normal to unbold body text, but didn't work */
   background-color: whitesmoke; /* changes background color to fix contrast issues */
   margin: 0;
   padding: 0;
@@ -81,6 +85,27 @@ h4,
 h5,
 h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  font-weight: bold; /* bolds all headings */
+  /* tried removing the left margin with margin:0, but didn't work */
+}
+
+h1 { /* increases h1 font size and adds padding */
+font-size: 4.8rem;
+padding: 20px;
+}
+
+h2 { /* increases h2 font size and adds padding */
+font-size: 3.2rem;
+padding: 20px;
+}
+
+h3 { /* increases h3 font size and adds padding */
+font-size: 2.4rem;
+padding: 20px;
+}
+
+p {
+ line-height: 1.5rem;
 }
 
 .container {
@@ -98,7 +123,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 20px; /* adds padding to the nav list */
 }
 
 .main-nav ul li {
@@ -111,6 +136,11 @@ img {
   color: inherit;
   text-decoration: none;
   font-size: 1.25rem;
+}
+
+article {
+  line-height: 1.5rem;
+  padding: 20px;
 }
 
 form input,
