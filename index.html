@@ -48,15 +48,16 @@
         error
         voluptatibus.</p>
 
-      <article class="owner" role="article" itemscope itemtype="https://schema.org/Person"> <!-- changes div to article, keeps class, adds ARIA role and Schema -->
+      <article class="owner" role="article" itemscope itemtype="https://schema.org/Person"> <!-- changes div to article, keeps class, adds ARIA role and schema -->
         <h2>Meet the owner</h2> <!-- changes h1 to h2 -->
         <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+          <li itemprop="name">Name: John Doe</li>  <!-- adds schema -->
+          <li itemprop="jobTitle">Title: CEO</li> <!-- adds schema -->
+          <li itemprop="email">Email : johnjoe@jambox.ca</li> <!-- adds schema -->
+          <li itemprop="telephone">Phone: 613-000-0000</li> <!-- adds schema -->
         </ul>
-        <h3>Address</h3> <!-- changes h1 to h3 -->
+
+        <h3 itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">Address</h3> <!-- changes h1 to h3 and adds schema -->
         <p>
           Jambox Studios
           123 Guitar Road,
@@ -70,16 +71,16 @@
 
         <form action="thanks.html" method="post" role="form" itemscope itemtype="https://schema.org/Person"> <!-- adds method-post to protect private info, adds ARIA role, adds Schema-->
 
-          <label for="fullname">Full Name</label> <!-- adds label for screen readers -->
+          <label for="fullname" itemprop="name">Full Name</label> <!-- adds label and schema -->
           <input type="text" id="fullname" name="fullname" placeholder="Full Name"> <!-- adds id and name to input -->
 
-          <label for="email">Email</label> <!-- adds label for screen readers -->
+          <label for="email" itemprop="email">Email</label> <!-- adds label and schema -->
           <input type="email" id="email" name="email" placeholder="Email"> <!-- changes input type to email and adds id and name -->
 
-          <label for="subject">Subject</label> <!-- adds label for screen readers -->
+          <label for="subject" itemprop="about" itemscope itemtype="https://schema.org/Thing">Subject</label> <!-- adds label and schema -->
           <input type="text" id="subject" name="subject" placeholder="Subject"> <!-- adds id and name to input -->
 
-          <label for="yourmessage">Your Message</label> <!-- changes bold text to message label -->
+          <label for="yourmessage" itemprop="subjectOf" itemscope itemtype="https://schema.org/Thing">Your Message</label> <!-- changes bold text to message label and adds schema -->
           <textarea id="message" name="message"></textarea> <!-- adds id and name to text area -->
       
           <button type="submit">Send</button>
