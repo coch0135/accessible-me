@@ -48,7 +48,7 @@
         error
         voluptatibus.</p>
 
-      <article class="owner" role="complementary"> <!-- changes div to article, keeps class, adds ARIA role -->
+      <article class="owner" role="article"> <!-- changes div to article, keeps class, adds ARIA role -->
         <h2>Meet the owner</h2> <!-- changes h1 to h2 -->
         <ul>
           <li>Name: John Doe</li>
@@ -65,7 +65,7 @@
         </p>
       </article> <!-- closes owner article instead of div -->
 
-      <article class="contact-section" role="complementary"> <!-- changes div to article, keeps class, adds ARIA role -->
+      <article class="contact-section" role="article"> <!-- changes div to article, keeps class, adds ARIA role -->
         <h3>Contact Us</h3> <!-- changes h1 to h3 -->
 
         <form action="thanks.html" method="post" role="form"> <!-- adds method-post to protect private info and ARIA role -->
@@ -89,7 +89,7 @@
       </article> <!-- closes contact article instead of div -->
 
     </main> <!-- closes main instead of closing div -->
-    <footer class="site-footer"> <!-- changes div to footer -->
+    <footer class="site-footer" role="contentinfo"> <!-- changes div to footer and adds ARIA role -->
       <p>&copy; 2021 Jam Box Studios</p> <!-- adds paragraph tag to footer content -->
     </footer> <!-- closes footer instead of div -->
   </div> <!-- closes container that targets all body content for styling -->
